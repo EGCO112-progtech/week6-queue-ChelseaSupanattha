@@ -10,14 +10,16 @@ void enqueue_struct(Queue* q, int x) {
       new_node->nextPtr = NULL;
 
       if (q->size == 0) {
+
           q->headPtr = new_node;
       } else {
           q->tailPtr->nextPtr = new_node;
       }
+
       q->tailPtr = new_node;
       q->size++;
   } else {
-      printf("Empty queue");
+      printf("Memory allocation failed\n");
   }
 }
 
