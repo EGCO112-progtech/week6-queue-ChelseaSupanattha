@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "Node.h"
-
 #include "Queue.h"
 
 int main(int argc , char **argv) {
   NodePtr headPtr=NULL;
    NodePtr tailPtr=NULL;
+
 /* For struct Queue
   Queue  q;
    q. headPtr=NULL;
@@ -23,7 +23,7 @@ int main(int argc , char **argv) {
             printf("dequeing %d\n",x);
         }
         else {
-       enqueue_struct(&headPtr,&tailPtr, atoi(argv[i]));
+       enqueue(&headPtr,&tailPtr, atoi(argv[i]));
            
         }
  }
